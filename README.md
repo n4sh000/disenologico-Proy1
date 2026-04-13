@@ -1,5 +1,5 @@
-# Proyecto 1: Diseño Digital Combinacional en Dispositivos Programables. 
----
+# Proyecto 1: Diseño Digital Combinacional en Dispositivos Programables. }
+
 Curso: Diseño Lógico
 ---
 Estudiantes:
