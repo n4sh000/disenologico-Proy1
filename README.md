@@ -1,6 +1,8 @@
 # disenologicoProy1
 Proyecto 1 Diseño digital combinacional en dispositivos programables. 
+---
 Curso: Diseño Lógico
+---
 Estudiantes:
 - David Araya
 - Nicolas Castro
