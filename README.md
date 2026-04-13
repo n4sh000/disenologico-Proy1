@@ -55,5 +55,7 @@ Convierte la palabra corregida a formato hexadecimal para su visualización en u
 ## Selector
 Permite elegir entre mostrar la palabra corregida o la posición del error. Está controlado por un interruptor externo y funciona como un multiplexor entre ambas salidas.
 
+---
 
 # Diagramas de bloques de cada subsistema y su funcionamiento fundamental
+
