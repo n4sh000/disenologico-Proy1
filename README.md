@@ -7,7 +7,6 @@ Estudiantes:
 - Nicolas Castro
 - Sebastián Fallas
 
-
 # Descripción general del sistema
 
 El sistema implementa un circuito digital para la transmisión y recuperación de información utilizando el código de Hamming (7,4). Su propósito es permitir la detección y corrección de errores de un solo bit en una palabra binaria transmitida entre dos FPGAs.
