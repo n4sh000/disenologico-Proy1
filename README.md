@@ -1,5 +1,4 @@
-# disenologicoProy1
-Proyecto 1 Diseño digital combinacional en dispositivos programables. 
+#Proyecto 1: Diseño Digital Combinacional en Dispositivos Programables. 
 ---
 Curso: Diseño Lógico
 ---
@@ -57,3 +56,4 @@ Convierte la palabra corregida a formato hexadecimal para su visualización en u
 Permite elegir entre mostrar la palabra corregida o la posición del error. Está controlado por un interruptor externo y funciona como un multiplexor entre ambas salidas.
 
 
+# Diagramas de bloques de cada subsistema y su funcionamiento fundamental
