@@ -101,6 +101,8 @@ codigo_corregido[4] = codigo[4] ⊕ ( p2 ~p1 ~p0)
 codigo_corregido[5] = codigo[5] ⊕ ( p2 ~p1  p0)
 
 codigo_corregido[6] = codigo[6] ⊕ ( p2  p1 ~p0)
+
+
 ---
 
 # Ecuaciones booleanas usadas para los 7-segmentos.
