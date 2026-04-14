@@ -128,6 +128,25 @@ Posteriormente, se evalúa el comportamiento del sistema dependiendo en la seña
 ---
 
 # Análisis de consumo de recursos en la FPGA y del consumo de potencia.
+## Recursos Para el transmisor
+La herramienta reporta los siguientes datos:
+- Number of wires:                 24
+- Number of wire bits:            104
+- Number of public wires:          24
+- Number of public wire bits:     104
+- Number of memories:               0
+- Number of memory bits:            0
+- Number of processes:              0
+- Number of cells:                 51
+  - ALU                             4
+  - GND                             1
+  - IBUF                            7
+  - LUT2                            1
+  - LUT3                            4
+  - LUT4                           17
+  - MUX2_LUT5                       2
+  - OBUF                           14
+  - VCC                             1
 
 ---
 
