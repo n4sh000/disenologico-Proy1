@@ -110,7 +110,7 @@ codigo_corregido[6] = codigo[6] ⊕ ( p2  p1 ~p0)
 
 # Análisis de la simulación funcional del sistema completo.
 
-[Simulación Funcional del Sistema Completo](TB_top.sv)
+[Simulación Funcional del Sistema Receptor](TB_top.sv)
 
 El testbench tiene como objetivo verificar el correcto funcionamiento del módulo top. Inicialmente, se definen las señales de entrada (i3, i2, i1, c2, i0, c1, c0 y switch) y las salidas (posicion, codigo_corregido, led y segments), las cuales corresponden a las interfaces del diseño a prueba.
 
