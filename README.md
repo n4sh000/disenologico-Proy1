@@ -23,6 +23,8 @@ Diagramas de bloques y funcionamiento.
 
 ## Transmisor
 
+[Código del Transmisor](proyecto_1_transmisor__diseno)
+
 ### Subsistema de lectura y visualización
 Este módulo recibe una palabra de 4 bits mediante interruptores y la muestra en un display de 7 segmentos en formato hexadecimal. Permite al usuario verificar el valor ingresado antes de la codificación.
 
@@ -36,8 +38,17 @@ Toma los 4 bits de entrada y genera una palabra de 7 bits agregando 3 bits de pa
 ### Codificador de binario a 7 segmentos
 Este módulo toma la palabra de 4 bits ingresada por el usuario, utiliza un conjunto de conmuntadores y mapas de Karnaugh para generar el display de 7 segmentos. Permite visualizar el valor en formato hexadecimal, facilitando la verificación del dato antes de ser procesado.
 
+<p align="center">
+<img width="321" height="91" alt="Codificador de binario a 7 segmentos drawio" src="https://github.com/user-attachments/assets/4c0f1fcf-caee-405c-9140-a7e266e2d99f" />
+</p>
+
+
 ### Generador de error
 Recibe la palabra codificada de 7 bits y un valor de control de 3 bits que indica la posición del bit a alterar. Si se selecciona una posición válida, el módulo invierte ese bit, simulando un error en la transmisión.
+
+<p align="center">
+<img width="595" height="231" alt="Generador de error drawio" src="https://github.com/user-attachments/assets/d3504047-0cf6-4536-b7f2-8869b90ca5d4" />
+</p>
 
 ### Salida del transmisor
 La palabra codificada, con o sin error, se envía al receptor mediante conexiones físicas entre FPGAs.
