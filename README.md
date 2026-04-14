@@ -88,17 +88,13 @@ Permite elegir entre mostrar la palabra corregida o la posición del error. Est�
 
 # Ecuaciones booleanas usadas para el circuito corrector de error.
 
-$$
-\begin{aligned}
-codigo\_corregido[0] &= codigo[0] \oplus (\overline{p2}\,\overline{p1}\,\overline{p0}) \\
-codigo\_corregido[1] &= codigo[1] \oplus (\overline{p2}\,\overline{p1}\,p0) \\
-codigo\_corregido[2] &= codigo[2] \oplus (\overline{p2}\,p1\,\overline{p0}) \\
-codigo\_corregido[3] &= codigo[3] \oplus (\overline{p2}\,p1\,p0) \\
-codigo\_corregido[4] &= codigo[4] \oplus (p2\,\overline{p1}\,\overline{p0}) \\
-codigo\_corregido[5] &= codigo[5] \oplus (p2\,\overline{p1}\,p0) \\
-codigo\_corregido[6] &= codigo[6] \oplus (p2\,p1\,\overline{p0})
-\end{aligned}
-$$
+codigo_corregido[0] = codigo[0] ⊕ (~p2 ~p1 ~p0)
+codigo_corregido[1] = codigo[1] ⊕ (~p2 ~p1  p0)
+codigo_corregido[2] = codigo[2] ⊕ (~p2  p1 ~p0)
+codigo_corregido[3] = codigo[3] ⊕ (~p2  p1  p0)
+codigo_corregido[4] = codigo[4] ⊕ ( p2 ~p1 ~p0)
+codigo_corregido[5] = codigo[5] ⊕ ( p2 ~p1  p0)
+codigo_corregido[6] = codigo[6] ⊕ ( p2  p1 ~p0)
 ---
 
 # Ecuaciones booleanas usadas para los 7-segmentos.
