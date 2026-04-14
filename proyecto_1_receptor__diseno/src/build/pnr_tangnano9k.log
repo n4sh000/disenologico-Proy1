@@ -1,0 +1,200 @@
+Info: Series:GW1N-9C Device:GW1NR-9C Package:QFN88P Speed:C6/I5
+
+Info: Packing constants..
+Info: Packing Shadow RAM..
+Info: Packing GSR..
+Info: Packing IOs..
+Info: Packing diff IOs..
+Info: Packing IO logic..
+Info: Packing wide LUTs..
+Info: Packing LUT5s..
+Info: Packing LUT6s..
+Info: Packing LUT7s..
+Info: Packing LUT8s..
+Info: Packing ALUs..
+Info: Packing LUT-FFs..
+Info: Packing non-LUT FFs..
+Info: Packing PLLs..
+Info: Checksum: 0xe51909cc
+
+Info: Annotating ports with timing budgets for target frequency 27.00 MHz
+Info: Checksum: 0xe51909cc
+
+Info: Device utilisation:
+Info: 	                 VCC:     1/    1   100%
+Info: 	               SLICE:    77/ 8640     0%
+Info: 	                 IOB:    29/  274    10%
+Info: 	                ODDR:     0/  274     0%
+Info: 	           MUX2_LUT5:    25/ 4320     0%
+Info: 	           MUX2_LUT6:    11/ 2160     0%
+Info: 	           MUX2_LUT7:     5/ 1080     0%
+Info: 	           MUX2_LUT8:     2/ 1056     0%
+Info: 	                 GND:     1/    1   100%
+Info: 	                RAMW:     0/  270     0%
+Info: 	                 GSR:     1/    1   100%
+Info: 	                 OSC:     0/    1     0%
+Info: 	                rPLL:     0/    2     0%
+
+Info: Placed 19 cells based on constraints.
+Info: Creating initial analytic placement for 34 cells, random placement wirelen = 1818.
+Info:     at initial placer iter 0, wirelen = 794
+Info:     at initial placer iter 1, wirelen = 735
+Info:     at initial placer iter 2, wirelen = 712
+Info:     at initial placer iter 3, wirelen = 688
+Info: Running main analytical placer, max placement attempts per cell = 10000.
+Info:     at iteration #1, type SLICE: wirelen solved = 684, spread = 695, legal = 689; time = 0.00s
+Info:     at iteration #1, type MUX2_LUT8: wirelen solved = 688, spread = 689, legal = 694; time = 0.00s
+Info:     at iteration #1, type MUX2_LUT7: wirelen solved = 694, spread = 694, legal = 694; time = 0.00s
+Info:     at iteration #1, type VCC: wirelen solved = 694, spread = 694, legal = 694; time = 0.00s
+Info:     at iteration #1, type MUX2_LUT5: wirelen solved = 694, spread = 694, legal = 694; time = 0.00s
+Info:     at iteration #1, type MUX2_LUT6: wirelen solved = 695, spread = 695, legal = 694; time = 0.01s
+Info:     at iteration #1, type GND: wirelen solved = 694, spread = 694, legal = 694; time = 0.00s
+Info:     at iteration #1, type GSR: wirelen solved = 694, spread = 694, legal = 694; time = 0.00s
+Info:     at iteration #1, type ALL: wirelen solved = 677, spread = 698, legal = 699; time = 0.00s
+Info: HeAP Placer Time: 0.03s
+Info:   of which solving equations: 0.02s
+Info:   of which spreading cells: 0.00s
+Info:   of which strict legalisation: 0.00s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 0, wirelen = 699
+Info:   at iteration #5: temp = 0.000000, timing cost = 0, wirelen = 489
+Info:   at iteration #10: temp = 0.000000, timing cost = 0, wirelen = 470
+Info:   at iteration #15: temp = 0.000000, timing cost = 0, wirelen = 468
+Info:   at iteration #15: temp = 0.000000, timing cost = 0, wirelen = 468 
+Info: SA placement time 0.07s
+
+Info: Max delay <async> -> <async>: 44.52 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 1 endpoint(s)
+Info:          + represents [1,1) endpoint(s)
+Info: [   753,   2488) |**+
+Info: [  2488,   4223) |********+
+Info: [  4223,   5958) |*+
+Info: [  5958,   7693) |*+
+Info: [  7693,   9428) |*******+
+Info: [  9428,  11163) |****+
+Info: [ 11163,  12898) |**+
+Info: [ 12898,  14633) |*****+
+Info: [ 14633,  16368) |*****+
+Info: [ 16368,  18103) |****+
+Info: [ 18103,  19838) | 
+Info: [ 19838,  21573) |*****+
+Info: [ 21573,  23308) |*********+
+Info: [ 23308,  25043) |**+
+Info: [ 25043,  26778) |**+
+Info: [ 26778,  28513) |************************************************************ 
+Info: [ 28513,  30248) |******+
+Info: [ 30248,  31983) |*************************************+
+Info: [ 31983,  33718) |****************************************************+
+Info: [ 33718,  35453) |********************************************************+
+Info: Checksum: 0x7e87e98e
+Info: Find global nets...
+Info: Routing globals...
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 438 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:        508 |       39        469 |   39   469 |         0|       0.38       0.38|
+Info: Routing complete.
+Info: Router1 time 0.38s
+Info: Checksum: 0x90fe38cb
+
+Info: Critical path report for cross-domain path '<async>' -> '<async>':
+Info: curr total
+Info:  0.0  0.0  Source decodificador.c0_IBUF_O$iob.O
+Info:  3.8  3.8    Net codigo[0] budget 37.037037 ns (22,28) -> (14,23)
+Info:                Sink decodificador.sindrome_LUT4_F_2_LC.A
+Info:                Defined in:
+Info:                  C:\Users\ncs16\DOWNLO~1\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0  4.9  Source decodificador.sindrome_LUT4_F_2_LC.F
+Info:  0.3  5.2    Net decodificador.sindrome[0] budget 17.969519 ns (14,23) -> (14,23)
+Info:                Sink decodificador.sindrome_ALU_I0_2_ALULC.A
+Info:                Defined in:
+Info:                  ../design/top.sv:96.29-105.2
+Info:                  ../design/B1_decodificador_de_paridad.sv:13.13-13.21
+Info:  1.0  6.2  Source decodificador.sindrome_ALU_I0_2_ALULC.F
+Info:  0.9  7.1    Net corrector.posicion_LUT2_F_I0[1] budget 11.636012 ns (14,23) -> (13,24)
+Info:                Sink corrector.posicion_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT4_F_LC.A
+Info:                Defined in:
+Info:                  C:\Users\ncs16\DOWNLO~1\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0  8.1  Source corrector.posicion_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT4_F_LC.F
+Info:  0.3  8.5    Net corrector.posicion_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1 budget 4.013379 ns (13,24) -> (13,24)
+Info:                Sink corrector.posicion_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\ncs16\DOWNLO~1\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:170.42-170.67
+Info:                  C:\Users\ncs16\DOWNLO~1\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
+Info:                  C:\Users\ncs16\DOWNLO~1\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:159.41-159.66
+Info:                  C:\Users\ncs16\DOWNLO~1\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2  8.6  Source corrector.posicion_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.OF
+Info:  0.3  9.0    Net corrector.posicion_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1 budget 4.013379 ns (13,24) -> (13,24)
+Info:                Sink corrector.posicion_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\ncs16\DOWNLO~1\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:170.42-170.67
+Info:                  C:\Users\ncs16\DOWNLO~1\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
+Info:                  C:\Users\ncs16\DOWNLO~1\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.13-157.15
+Info:  0.4  9.3  Source corrector.posicion_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_LC.OF
+Info:  0.3  9.7    Net corrector.posicion_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1 budget 4.013380 ns (13,24) -> (13,24)
+Info:                Sink corrector.posicion_MUX2_LUT8_O_I0_MUX2_LUT7_O_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\ncs16\DOWNLO~1\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:170.42-170.67
+Info:                  C:\Users\ncs16\DOWNLO~1\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:163.13-163.15
+Info:  0.5 10.2  Source corrector.posicion_MUX2_LUT8_O_I0_MUX2_LUT7_O_LC.OF
+Info:  0.4 10.6    Net corrector.posicion_MUX2_LUT8_O_I0 budget 4.013380 ns (13,24) -> (12,24)
+Info:                Sink corrector.posicion_MUX2_LUT8_O_LC.I0
+Info:                Defined in:
+Info:                  C:\Users\ncs16\DOWNLO~1\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:169.9-169.11
+Info:  0.7 11.3  Source corrector.posicion_MUX2_LUT8_O_LC.OF
+Info:  0.8 12.1    Net corrector.posicion[0] budget 4.013380 ns (12,24) -> (11,24)
+Info:                Sink selector.switch_LUT4_I3_2_LC.C
+Info:                Defined in:
+Info:                  ../design/top.sv:115.13-120.2
+Info:                  ../design/B4_selector.sv:35.24-35.32
+Info:  0.8 12.9  Source selector.switch_LUT4_I3_2_LC.F
+Info:  0.3 13.3    Net selector.switch_LUT4_I3_2_F budget 3.110804 ns (11,24) -> (11,24)
+Info:                Sink selector.switch_MUX2_LUT6_S0_O_MUX2_LUT5_O_1_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\ncs16\DOWNLO~1\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 13.4  Source selector.switch_MUX2_LUT6_S0_O_MUX2_LUT5_O_1_LC.OF
+Info: 10.9 24.3    Net selector.switch_MUX2_LUT6_S0_O[3] budget 3.110804 ns (11,24) -> (44,14)
+Info:                Sink display.segments_LUT4_F_6_LC.C
+Info:                Defined in:
+Info:                  C:\Users\ncs16\DOWNLO~1\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  0.8 25.1  Source display.segments_LUT4_F_6_LC.F
+Info:  0.8 25.9    Net display.segments[0] budget 2.709185 ns (44,14) -> (46,14)
+Info:                Sink segments_OBUF_O_6$iob.I
+Info:                Defined in:
+Info:                  ../design/top.sv:129.15-132.2
+Info:                  ../design/B5_7segmentos.sv:4.24-4.32
+Info: 6.7 ns logic, 19.2 ns routing
+
+Info: Max delay <async> -> <async>: 25.92 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 1 endpoint(s)
+Info:          + represents [1,1) endpoint(s)
+Info: [ 11114,  12366) |**+
+Info: [ 12366,  13618) |***+
+Info: [ 13618,  14870) |*****+
+Info: [ 14870,  16122) |****+
+Info: [ 16122,  17374) |******+
+Info: [ 17374,  18626) |***+
+Info: [ 18626,  19878) |***+
+Info: [ 19878,  21130) |******+
+Info: [ 21130,  22382) |****+
+Info: [ 22382,  23634) |+
+Info: [ 23634,  24886) |****+
+Info: [ 24886,  26138) |******+
+Info: [ 26138,  27390) |*+
+Info: [ 27390,  28642) |****+
+Info: [ 28642,  29894) |********+
+Info: [ 29894,  31146) |***********************************************+
+Info: [ 31146,  32398) |**+
+Info: [ 32398,  33650) |*****************************+
+Info: [ 33650,  34902) |************************************************************ 
+Info: [ 34902,  36154) |************************************+
+
+Info: Program finished normally.

@@ -1,0 +1,124 @@
+$date
+	Tue Apr 14 00:22:36 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module TB_top $end
+$var wire 3 ! posicion [2:0] $end
+$var wire 7 " codigo_corregido [6:0] $end
+$var wire 7 # codigo [6:0] $end
+$var reg 1 $ c0 $end
+$var reg 1 % c1 $end
+$var reg 1 & c2 $end
+$var reg 1 ' i0 $end
+$var reg 1 ( i1 $end
+$var reg 1 ) i2 $end
+$var reg 1 * i3 $end
+$var reg 1 + switch $end
+$scope module uut $end
+$var wire 1 $ c0 $end
+$var wire 1 % c1 $end
+$var wire 1 & c2 $end
+$var wire 7 , codigo [6:0] $end
+$var wire 1 ' i0 $end
+$var wire 1 ( i1 $end
+$var wire 1 ) i2 $end
+$var wire 1 * i3 $end
+$var wire 1 + switch $end
+$var wire 1 - switch_int $end
+$var wire 4 . valor_display [3:0] $end
+$var wire 7 / segments [6:0] $end
+$var wire 3 0 posicion [2:0] $end
+$var wire 4 1 led [3:0] $end
+$var wire 7 2 codigo_corregido [6:0] $end
+$var parameter 32 3 DEBUG $end
+$var parameter 32 4 DEBUG_SWITCH $end
+$scope module corrector $end
+$var wire 7 5 codigo [6:0] $end
+$var wire 3 6 posicion [2:0] $end
+$var reg 7 7 codigo_corregido [6:0] $end
+$upscope $end
+$scope module decodificador $end
+$var wire 1 8 c0 $end
+$var wire 1 9 c1 $end
+$var wire 1 : c2 $end
+$var wire 1 ; i0 $end
+$var wire 1 < i1 $end
+$var wire 1 = i2 $end
+$var wire 1 > i3 $end
+$var wire 3 ? sindrome [2:0] $end
+$var wire 3 @ posicion [2:0] $end
+$upscope $end
+$scope module despliegue $end
+$var wire 7 A codigo_corregido [6:0] $end
+$var wire 4 B led [3:0] $end
+$upscope $end
+$scope module display $end
+$var wire 7 C segments [6:0] $end
+$var wire 4 D valor [3:0] $end
+$var reg 7 E seg [6:0] $end
+$upscope $end
+$scope module selector $end
+$var wire 7 F codigo_corregido [6:0] $end
+$var wire 3 G posicion [2:0] $end
+$var wire 1 - switch $end
+$var wire 4 H palabra [3:0] $end
+$var reg 4 I valor_display [3:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1 4
+b1 3
+$end
+#0
+$dumpvars
+b0 I
+b1110 H
+b0 G
+b1111000 F
+b1000000 E
+b0 D
+b111111 C
+b1 B
+b1111000 A
+b0 @
+b1 ?
+1>
+1=
+1<
+0;
+1:
+09
+18
+b1111000 7
+b0 6
+b1111001 5
+b1111000 2
+b1 1
+b0 0
+b111111 /
+b0 .
+1-
+b1111001 ,
+0+
+1*
+1)
+1(
+1'
+0&
+0%
+1$
+b1110101 #
+b1111000 "
+b0 !
+$end
+#10000
+1+
+#20000
