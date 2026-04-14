@@ -120,7 +120,7 @@ Dentro del bloque initial, se inicia la prueba mostrando un mensaje y se aplica 
 
 Ahora, el testbench muestra en consola el código recibido, la posición del error detectado y el código corregido, lo cual permite verificar la correcta operación de los módulos internos de detección y corrección de errores. Luego, se calcula y muestra la palabra corregida en formato binario extrayendo directamente los bits de información desde el código corregido.
 
-Posteriormente, se evalúa el comportamiento del sistema dependiendo en la señal switch. Primero, se asigna un valor de 0, lo que corresponde a la visualización de la palabra en el display de 7 segmentos y se imprime el valor de la palabra en formato hexadecimal, verificando que la selección de datos hacia el display sea correcta. Por último, se assigna el nuevo valor del switch a 1, lo que indica que debe mostrarse la posición del error. 
+Posteriormente, se evalúa el comportamiento del sistema dependiendo en la señal switch. Primero, se asigna un valor de 0, lo que corresponde a la visualización de la palabra en el display de 7 segmentos y se imprime el valor de la palabra en formato hexadecimal, verificando que la selección de datos hacia el display sea correcta. Por último, se asigna el nuevo valor del switch a 1, lo que indica que debe mostrarse la posición del error. 
 
 
 ---
