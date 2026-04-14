@@ -110,6 +110,8 @@ codigo_corregido[6] = codigo[6] ⊕ ( p2  p1 ~p0)
 
 # Análisis de la simulación funcional del sistema completo.
 
+[Simulación Funcional del Sistema Completo](TB_top.sv)
+
 ---
 
 # Análisis de consumo de recursos en la FPGA y del consumo de potencia.
