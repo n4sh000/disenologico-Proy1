@@ -114,7 +114,7 @@ codigo_corregido[6] = codigo[6] ⊕ ( p2  p1 ~p0)
 
 El testbench tiene como objetivo verificar el correcto funcionamiento del módulo top. Inicialmente, se definen las señales de entrada (i3, i2, i1, c2, i0, c1, c0 y switch) y las salidas (posicion, codigo_corregido, led y segments), las cuales corresponden a las interfaces del diseño a prueba.
 
-Seguidamente, se instancia el módulo top con los parámetros DEBUG = 0 y DEBUG_SWITCH = 0, lo cual permite que el sistema utilice las entradas proporcionadas por el testbench en lugar de valores internos. De esta forma, el comportamiento del diseño simula el funcionamiento real en hardware.
+Seguidamente, se insta al módulo top con los parámetros DEBUG = 0 y DEBUG_SWITCH = 0, lo cual permite que el sistema utilice las entradas proporcionadas por el testbench en lugar de valores que deberían ser recolectados por la FPGA. De esta forma, el comportamiento del diseño simula el funcionamiento real.
 
 Dentro del bloque initial, se inicia la prueba mostrando un mensaje y se aplica un estímulo de entrada asignando el vector de 7 bits 1111001  a las señales de entrada (código el cuál está sujeto a cambios por si se quiere probar otro código o otra posición de error), respetando el orden definido para el código de Hamming.
 
