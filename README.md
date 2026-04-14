@@ -108,7 +108,7 @@ codigo_corregido[6] = codigo[6] ⊕ ( p2  p1 ~p0)
 
 ---
 
-# Simulación funcional del sistema completo.
+# Análisis de la simulación funcional del sistema completo.
 
 ---
 
