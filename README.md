@@ -46,7 +46,7 @@ La palabra codificada, con o sin error, se envía al receptor mediante conexione
 
 ## Receptor
 
-[Simulación Funcional del Sistema Receptor](proyecto_1_receptor__diseno)
+[Código del Receptor](proyecto_1_receptor__diseno)
 
 ### Subsistema de recepción
 Recibe la palabra de 7 bits proveniente del transmisor y la distribuye a los módulos de detección y corrección de errores.
