@@ -1,5 +1,6 @@
 # Proyecto 1: Diseño Digital Combinacional en Dispositivos Programables. 
 Curso: Diseño Lógico
+
 Profesor: Dr.-Ing Alfonso Chacon Rodriguez 
 
 ---
