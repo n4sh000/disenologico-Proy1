@@ -35,7 +35,7 @@ Recibe la palabra codificada de 7 bits y un valor de control de 3 bits que indic
 ### Salida del transmisor
 La palabra codificada, con o sin error, se envía al receptor mediante conexiones físicas entre FPGAs.
 
----
+
 
 ## Receptor
 
@@ -59,8 +59,16 @@ Utiliza el síndrome para identificar y corregir el bit erróneo mediante la inv
 ### Visualización en LEDs
 Muestra la palabra corregida en formato binario utilizando LEDs, permitiendo observar directamente los bits recuperados.
 
+<p align="center">
+<img width="401" height="51" alt="DespliegueLeds drawio" src="https://github.com/user-attachments/assets/d57147ff-0395-4b4d-883d-f4665d344a9b" />
+</p>
+
 ### Display de 7 segmentos
 Convierte la palabra corregida a formato hexadecimal para su visualización en un display de 7 segmentos.
+
+<p align="center">
+<img width="431" height="71" alt="Display7seg drawio" src="https://github.com/user-attachments/assets/9d38b8ba-8fc1-488d-be66-13e315ed452a" />
+</p>
 
 ### Selector
 Permite elegir entre mostrar la palabra corregida o la posición del error. Está controlado por un interruptor externo y funciona como un multiplexor entre ambas salidas.
