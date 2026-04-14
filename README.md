@@ -1,11 +1,11 @@
 # Proyecto 1: Diseño Digital Combinacional en Dispositivos Programables. 
-
 Curso: Diseño Lógico
+Profesor: Dr.-Ing Alfonso Chacon Rodriguez 
 ---
 Estudiantes:
-- David Araya
-- Nicolas Castro
-- Sebastián Fallas
+- David Araya Mora
+- Nicolas Castro Sanchez
+- Sebastián Fallas Mora
 
 # Descripción general del circuito completo.
 
@@ -84,6 +84,7 @@ Permite elegir entre mostrar la palabra corregida o la posición del error. Est�
 ---
 
 # Ecuaciones booleanas usadas para el circuito corrector de error.
+
 
 ---
 
