@@ -7,7 +7,7 @@ Estudiantes:
 - Nicolas Castro
 - Sebastián Fallas
 
-# Descripción general del sistema
+# Descripción general del circuito completo.
 
 El sistema implementa un circuito digital para la transmisión y recuperación de información utilizando el código de Hamming (7,4). Su propósito es permitir la detección y corrección de errores de un solo bit en una palabra binaria transmitida entre dos FPGAs.
 El sistema se divide en dos bloques principales: Transmisor y Receptor. El transmisor genera y codifica la información, mientras que el receptor la analiza, detecta errores y recupera los datos originales.
@@ -15,7 +15,8 @@ El flujo general consiste en la entrada de una palabra de 4 bits, su codificaci�
 
 ---
 
-# Descripción de cada submódulo. 
+# Subsistemas. 
+Diagramas de bloques y funcionamiento. 
 
 ## Transmisor
 
@@ -41,11 +42,19 @@ La palabra codificada, con o sin error, se envía al receptor mediante conexione
 ### Subsistema de recepción
 Recibe la palabra de 7 bits proveniente del transmisor y la distribuye a los módulos de detección y corrección de errores.
 
-## Verificador de paridad
+### Verificador de paridad
 Calcula el síndrome de error a partir de los bits recibidos. Este síndrome indica si existe un error y, en caso afirmativo, la posición del bit erróneo.
+
+<p align="center">
+<img width="660" height="224" alt="DecodificadorParidad drawio" src="https://github.com/user-attachments/assets/41e88b68-f1fa-4cbf-93a7-61b67afe3e49" />
+</p>
 
 ### Corrector de error
 Utiliza el síndrome para identificar y corregir el bit erróneo mediante la inversión del mismo. A partir de la palabra corregida, extrae los 4 bits originales de información.
+
+<p align="center">
+<img width="560" height="121" alt="CorrectorError drawio" src="https://github.com/user-attachments/assets/056a7159-1ce5-4c61-bfb3-3e928dea962e" />
+</p>
 
 ### Visualización en LEDs
 Muestra la palabra corregida en formato binario utilizando LEDs, permitiendo observar directamente los bits recuperados.
@@ -56,7 +65,32 @@ Convierte la palabra corregida a formato hexadecimal para su visualización en u
 ### Selector
 Permite elegir entre mostrar la palabra corregida o la posición del error. Está controlado por un interruptor externo y funciona como un multiplexor entre ambas salidas.
 
+<p align="center">
+<img width="491" height="310" alt="Selector drawio" src="https://github.com/user-attachments/assets/22033ab8-03b9-4e66-b585-45275cd17f10" />
+</p>
+
 ---
 
-# Diagramas de bloques de cada subsistema y su funcionamiento fundamental
+# Ecuaciones booleanas usadas para el circuito corrector de error.
+
+---
+
+# Ecuaciones booleanas usadas para los 7-segmentos.
+
+---
+
+# Simulación funcional del sistema completo.
+
+---
+
+# Análisis de consumo de recursos en la FPGA y del consumo de potencia.
+
+---
+
+# Principales problemas hallados.
+
+# Soluciones aplicadas.
+
+---
+
 
