@@ -26,6 +26,10 @@ Este módulo recibe una palabra de 4 bits mediante interruptores y la muestra en
 ### Codificador Hamming (7,4) y paridad par
 Toma los 4 bits de entrada y genera una palabra de 7 bits agregando 3 bits de paridad. Estos bits se calculan mediante operaciones XOR para permitir la detección y corrección de errores en el receptor.
 
+<p align="center">
+<img width="526" height="516" alt="Codificador drawio" src="https://github.com/user-attachments/assets/107ccbf7-b4a5-409f-9383-ea4d98092acd" />
+</p>
+
 ### Codificador de binario a 7 segmentos
 Este módulo toma la palabra de 4 bits ingresada por el usuario, utiliza un conjunto de conmuntadores y mapas de Karnaugh para generar el display de 7 segmentos. Permite visualizar el valor en formato hexadecimal, facilitando la verificación del dato antes de ser procesado.
 
