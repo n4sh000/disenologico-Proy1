@@ -88,7 +88,7 @@ Permite elegir entre mostrar la palabra corregida o la posición del error. Est�
 
 # Ecuaciones booleanas usadas para el circuito corrector de error.
 
-<p align="center">
+<div align="center">
 codigo_corregido[0] = codigo[0] ⊕ (~p2 ~p1 ~p0)
 
 codigo_corregido[1] = codigo[1] ⊕ (~p2 ~p1  p0)
@@ -102,7 +102,7 @@ codigo_corregido[4] = codigo[4] ⊕ ( p2 ~p1 ~p0)
 codigo_corregido[5] = codigo[5] ⊕ ( p2 ~p1  p0)
 
 codigo_corregido[6] = codigo[6] ⊕ ( p2  p1 ~p0)
-</p>
+</div>
 
 ---
 
