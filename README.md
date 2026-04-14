@@ -99,9 +99,16 @@ Permite elegir entre mostrar la palabra corregida o la posición del error. Est�
 
 ---
 
-# Principales problemas hallados.
+# Problemas encontrados y soluciones aplicadas
 
-# Soluciones aplicadas.
+Durante el desarrollo del proyecto, el grupo enfrentó varios problemas relacionados con la implementación y validación del sistema.
+Uno de los principales inconvenientes fue la implementación inicial del código Hamming (7,4), donde se presentaron errores en los bits de paridad. Esto provocaba resultados incorrectos en el receptor. La solución fue revisar las ecuaciones teóricas y validar su funcionamiento mediante simulaciones antes de integrarlas.
+
+También se presentaron dificultades en el cálculo del síndrome y en la corrección del error, ya que el sistema no identificaba correctamente la posición del bit erróneo. Para solucionarlo, se verificaron las ecuaciones del verificador de paridad y se implementó correctamente el decodificador del síndrome junto con la corrección mediante compuertas XOR en la programación de la FPGA.
+
+En la visualización, se observaron inconsistencias en el display de 7 segmentos debido a errores en la lógica de decodificación. Esto se corrigió simplificando nuevamente las ecuaciones booleanas y revisando las conexiones físicas del display.
+
+Finalmente, al trabajar en grupo de tres personas, surgieron dificultades al integrar los módulos desarrollados por separado. Para solucionarlo, se dividió el trabajo por subsistemas y se realizaron pruebas individuales antes de la integración final.
 
 ---
 
