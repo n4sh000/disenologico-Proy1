@@ -42,6 +42,15 @@ Este módulo toma la palabra de 4 bits ingresada por el usuario, utiliza un conj
 <img width="321" height="91" alt="Codificador de binario a 7 segmentos drawio" src="https://github.com/user-attachments/assets/4c0f1fcf-caee-405c-9140-a7e266e2d99f" />
 </p>
 
+Aquí se muestra el resultado de la simplificación de Karnaugh para el segmento "c" del display de 7 segmentos.
+
+B'C' + B'D + C'D + A'B + AB'
+
+<p align="center">
+<img width="3768" height="2764" alt="image" src="https://github.com/user-attachments/assets/66af0dd9-8cc4-4d2b-a2ea-b9bcf734ec53" />
+</p>
+
+
 
 ### Generador de error
 Recibe la palabra codificada de 7 bits y un valor de control de 3 bits que indica la posición del bit a alterar. Si se selecciona una posición válida, el módulo invierte ese bit, simulando un error en la transmisión.
