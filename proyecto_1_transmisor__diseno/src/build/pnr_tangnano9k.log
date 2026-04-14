@@ -1,0 +1,158 @@
+Info: Series:GW1N-9C Device:GW1NR-9C Package:QFN88P Speed:C6/I5
+
+Info: Packing constants..
+Info: Packing Shadow RAM..
+Info: Packing GSR..
+Info: Packing IOs..
+Info: Packing diff IOs..
+Info: Packing IO logic..
+Info: Packing wide LUTs..
+Info: Packing LUT5s..
+Info: Packing LUT6s..
+Info: Packing LUT7s..
+Info: Packing LUT8s..
+Info: Packing ALUs..
+Info: Packing LUT-FFs..
+Info: Packing non-LUT FFs..
+Info: Packing PLLs..
+Info: Checksum: 0xb9145405
+
+Info: Annotating ports with timing budgets for target frequency 27.00 MHz
+Info: Checksum: 0xb9145405
+
+Info: Device utilisation:
+Info: 	                 VCC:     1/    1   100%
+Info: 	               SLICE:    28/ 8640     0%
+Info: 	                 IOB:    21/  274     7%
+Info: 	                ODDR:     0/  274     0%
+Info: 	           MUX2_LUT5:     2/ 4320     0%
+Info: 	           MUX2_LUT6:     0/ 2160     0%
+Info: 	           MUX2_LUT7:     0/ 1080     0%
+Info: 	           MUX2_LUT8:     0/ 1056     0%
+Info: 	                 GND:     1/    1   100%
+Info: 	                RAMW:     0/  270     0%
+Info: 	                 GSR:     1/    1   100%
+Info: 	                 OSC:     0/    1     0%
+Info: 	                rPLL:     0/    2     0%
+
+Info: Placed 21 cells based on constraints.
+Info: Creating initial analytic placement for 24 cells, random placement wirelen = 1107.
+Info:     at initial placer iter 0, wirelen = 495
+Info:     at initial placer iter 1, wirelen = 461
+Info:     at initial placer iter 2, wirelen = 452
+Info:     at initial placer iter 3, wirelen = 441
+Info: Running main analytical placer, max placement attempts per cell = 10000.
+Info:     at iteration #1, type SLICE: wirelen solved = 435, spread = 442, legal = 473; time = 0.00s
+Info:     at iteration #1, type MUX2_LUT5: wirelen solved = 466, spread = 466, legal = 466; time = 0.00s
+Info:     at iteration #1, type VCC: wirelen solved = 466, spread = 466, legal = 466; time = 0.00s
+Info:     at iteration #1, type GND: wirelen solved = 466, spread = 466, legal = 466; time = 0.00s
+Info:     at iteration #1, type GSR: wirelen solved = 466, spread = 466, legal = 466; time = 0.00s
+Info:     at iteration #1, type ALL: wirelen solved = 434, spread = 474, legal = 466; time = 0.00s
+Info: HeAP Placer Time: 0.02s
+Info:   of which solving equations: 0.01s
+Info:   of which spreading cells: 0.00s
+Info:   of which strict legalisation: 0.00s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 0, wirelen = 466
+Info:   at iteration #5: temp = 0.000000, timing cost = 0, wirelen = 437
+Info:   at iteration #7: temp = 0.000000, timing cost = 0, wirelen = 433 
+Info: SA placement time 0.01s
+
+Info: Max delay <async> -> <async>: 27.80 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 1 endpoint(s)
+Info:          + represents [1,1) endpoint(s)
+Info: [  9233,  10324) |**** 
+Info: [ 10324,  11415) | 
+Info: [ 11415,  12506) |**** 
+Info: [ 12506,  13597) |********** 
+Info: [ 13597,  14688) |*************** 
+Info: [ 14688,  15779) |************* 
+Info: [ 15779,  16870) |****** 
+Info: [ 16870,  17961) |**************** 
+Info: [ 17961,  19052) |**** 
+Info: [ 19052,  20143) | 
+Info: [ 20143,  21234) |**** 
+Info: [ 21234,  22325) |* 
+Info: [ 22325,  23416) |**** 
+Info: [ 23416,  24507) |***** 
+Info: [ 24507,  25598) | 
+Info: [ 25598,  26689) |** 
+Info: [ 26689,  27780) |*** 
+Info: [ 27780,  28871) | 
+Info: [ 28871,  29962) |** 
+Info: [ 29962,  31053) |** 
+Info: Checksum: 0xa72a35cc
+Info: Find global nets...
+Info: Routing globals...
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 120 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:        123 |        3        120 |    3   120 |         0|       0.40       0.40|
+Info: Routing complete.
+Info: Router1 time 0.40s
+Info: Checksum: 0x5df90bb7
+
+Info: Critical path report for cross-domain path '<async>' -> '<async>':
+Info: curr total
+Info:  0.0  0.0  Source mod_error.error_pos_IBUF_O_1$iob.O
+Info: 11.7 11.7    Net mod_error.error_pos[1] budget 37.037037 ns (12,28) -> (34,1)
+Info:                Sink mod_codificador.c_ALU_I1_1_ALULC.A
+Info:                Defined in:
+Info:                  ../design/transmitter_top.sv:15.21-19.6
+Info:                  ../design/error_generator.sv:2.23-2.32
+Info:  1.0 12.7  Source mod_codificador.c_ALU_I1_1_ALULC.F
+Info:  1.2 13.9    Net mod_codificador.c_ALU_I1_SUM[1] budget 18.003019 ns (34,1) -> (36,1)
+Info:                Sink mod_error.datos_error_LUT3_F_I0_LUT3_F_LC.B
+Info:                Defined in:
+Info:                  c:\Users\david\OneDrive\ESCRIT~1\Nacho\TEC\virus\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1 15.0  Source mod_error.datos_error_LUT3_F_I0_LUT3_F_LC.F
+Info:  0.9 15.9    Net mod_error.datos_error_LUT3_F_I0[1] budget 11.636012 ns (36,1) -> (37,2)
+Info:                Sink mod_error.datos_error_MUX2_LUT5_O_1_I1_LUT4_F_LC.B
+Info:                Defined in:
+Info:                  c:\Users\david\OneDrive\ESCRIT~1\Nacho\TEC\virus\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1 17.0  Source mod_error.datos_error_MUX2_LUT5_O_1_I1_LUT4_F_LC.F
+Info:  0.3 17.3    Net mod_error.datos_error_MUX2_LUT5_O_1_I1 budget 6.726607 ns (37,2) -> (37,2)
+Info:                Sink mod_error.datos_error_MUX2_LUT5_O_1_LC.I1
+Info:                Defined in:
+Info:                  c:\Users\david\OneDrive\ESCRIT~1\Nacho\TEC\virus\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 17.5  Source mod_error.datos_error_MUX2_LUT5_O_1_LC.OF
+Info:  1.0 18.5    Net mod_error.datos_error[1] budget 6.726607 ns (37,2) -> (38,0)
+Info:                Sink hamming_error_OBUF_O_5$iob.I
+Info:                Defined in:
+Info:                  ../design/transmitter_top.sv:15.21-19.6
+Info:                  ../design/error_generator.sv:4.24-4.35
+Info: 3.4 ns logic, 15.1 ns routing
+
+Info: Max delay <async> -> <async>: 18.46 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 1 endpoint(s)
+Info:          + represents [1,1) endpoint(s)
+Info: [ 18581,  19320) |**** 
+Info: [ 19320,  20059) | 
+Info: [ 20059,  20798) |*** 
+Info: [ 20798,  21537) |***** 
+Info: [ 21537,  22276) |******** 
+Info: [ 22276,  23015) |*** 
+Info: [ 23015,  23754) |***************** 
+Info: [ 23754,  24493) |*********** 
+Info: [ 24493,  25232) |************ 
+Info: [ 25232,  25971) |********* 
+Info: [ 25971,  26710) |* 
+Info: [ 26710,  27449) |** 
+Info: [ 27449,  28188) |**** 
+Info: [ 28188,  28927) |*** 
+Info: [ 28927,  29666) |**** 
+Info: [ 29666,  30405) |** 
+Info: [ 30405,  31144) |** 
+Info: [ 31144,  31883) |* 
+Info: [ 31883,  32622) |** 
+Info: [ 32622,  33361) |** 
+
+Info: Program finished normally.
