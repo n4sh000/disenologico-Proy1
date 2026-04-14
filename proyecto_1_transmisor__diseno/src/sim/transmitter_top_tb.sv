@@ -87,7 +87,7 @@ module transmitter_top_tb;
             end
         end
 
-        $display("TEST COMPLETADO SIN ERRORES");
+        $display("TEST COMPLETADO");
         $finish;
     end
 
