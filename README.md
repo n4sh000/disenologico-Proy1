@@ -3,11 +3,12 @@ Curso: Diseño Lógico
 
 Profesor: Dr.-Ing Alfonso Chacon Rodriguez 
 
----
 Estudiantes:
 - David Araya Mora
 - Nicolas Castro Sanchez
 - Sebastián Fallas Mora
+
+---
 
 # Descripción general del circuito completo.
 
