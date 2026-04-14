@@ -119,9 +119,34 @@ codigo_corregido[6] = codigo[6] ⊕ ( p2  p1 ~p0)
 
 # Ecuaciones booleanas usadas para los 7-segmentos.
 
+- seg₆ = i₃'i₂i₀ + i₃'i₁ + i₃i₂'i₁' + i₃i₀' + i₂'i₀' + i₂i₁
+- seg₅ = i₂'i₁' + i₂'i₀' + i₃'i₁'i₀' + i₃'i₁i₀ + i₃i₁'i₀
+- seg₄ = i₂'i₁' + i₂'i₀ + i₁'i₀ + i₃'i₂ + i₃i₂'
+- seg₃ = i₃'i₁i₀' + i₃i₁' + i₂'i₁'i₀' + i₂'i₁i₀ + i₂i₁'i₀ + i₂i₁i₀'
+- seg₂ = i₃i₂ + i₃i₁ + i₂'i₀' + i₁i₀'
+- seg₁ = i₃'i₂i₁' + i₃i₂' + i₃i₁ + i₂i₀' + i₁'i₀'
+- seg₀ = i₃'i₂i₁' + i₃i₂' + i₃i₀ + i₂'i₁ + i₁i₀'
+
 ---
 
 # Análisis de la simulación funcional del sistema completo.
+
+## Simulación Funcional del Transmisor
+[Simulación Funcional del Sistema Transmisor](proyecto_1_transmisor__diseno/src/sim/transmitter_top_tb.sv)
+
+El testbench tiene como objetivo verificar el correcto funcionamiento del módulo transmisor (transmitter_top), validando tanto la generación del código de Hamming con error como la salida hacia el display de 7 segmentos. Inicialmente, se definen las señales de entrada (datos y error_pos) y las salidas del sistema (hamming_error y seg), así como señales internas utilizadas para calcular los valores esperados, incluyendo el código de Hamming correcto, el código con error y la salida esperada del display.
+
+Seguidamente, se instancia el módulo bajo prueba (DUT), conectando las señales definidas para permitir la evaluación directa de su comportamiento frente a distintos estímulos. Paralelamente, se implementa un modelo de referencia dentro del testbench mediante bloques always_comb, donde se calcula el código de Hamming (7,4) a partir de los bits de entrada, generando los bits de paridad correspondientes y construyendo la palabra codificada de 7 bits según la estructura definida.
+
+A continuación, se modela la inyección de error, donde, dependiendo del valor de error_pos, se altera el bit correspondiente mediante una operación XOR con un desplazamiento, o se mantiene el código intacto en caso de no existir error. Asimismo, se implementa un modelo esperado para el display de 7 segmentos utilizando una estructura case, que asigna el patrón correspondiente a cada valor hexadecimal de entrada.
+
+Dentro del bloque initial, se inicia la prueba mostrando un mensaje en consola y recorriendo exhaustivamente todas las combinaciones posibles de entrada. Para cada valor de datos (de 0 a 15), se evalúan todas las posiciones de error posibles (de 0 a 7), aplicando los estímulos y permitiendo un tiempo de estabilización antes de realizar las verificaciones.
+
+Durante cada iteración, el testbench compara la salida del módulo con los valores esperados. En caso de discrepancias en el código de Hamming o en la salida del display, se reporta un error detallado indicando las condiciones de entrada y los valores obtenidos y esperados. Esto permite identificar fallos específicos en la lógica del diseño.
+
+Finalmente, si todas las combinaciones son evaluadas sin errores, se muestra un mensaje indicando la correcta ejecución del test. Adicionalmente, se genera un archivo de forma de onda (.vcd) mediante las funciones $dumpfile y $dumpvars, lo que permite visualizar el comportamiento temporal de las señales y facilitar el análisis del sistema.
+
+## Simulación Funcional del Receptor
 
 [Simulación Funcional del Sistema Receptor](TB_top.sv)
 
