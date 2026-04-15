@@ -195,6 +195,75 @@ La herramienta reporta los siguientes datos:
 
 ---
 
+# Ejercicio 2: Oscilador en Anillo (Extra)
+
+## Descripción general
+El oscilador en anillo es un circuito formado por un número impar de inversores conectados en cascada, donde la salida del último inversor se retroalimenta a la entrada del primero de ellos. Esta configuración no tiene un estado estable, por lo que genera una señal oscilante de manera continua.
+El funcionamiento del oscilador se basa en los retardos de propagación de cada inversor. Cuando una señal cambia de estado en la entrada, tarda un tiempo finito en reflejarse en la salida. Al propagarse a través de la cadena de inversores y regresar al inicio, se produce un ciclo de cambios que genera una señal periódica.
+
+El periodo de oscilación depende directamente del número de inversores y del retardo de propagación de cada uno. En general, el periodo es proporcional al doble del número de inversores multiplicado por el retardo promedio de cada compuerta.
+
+Este circuito permite medir experimentalmente parámetros importantes como el tiempo de propagación, así como observar efectos físicos como los tiempos de subida y bajada de la señal. Además, al modificar la longitud del circuito o agregar elementos adicionales, es posible analizar cómo estos factores afectan la frecuencia de oscilación.
+El oscilador en anillo es una herramienta fundamental para comprender el comportamiento temporal de los circuitos digitales y las limitaciones físicas de las compuertas lógicas.
+
+### Oscilador de 5 inversores
+<p align="center">
+<img width="688" height="148" alt="Oscilador5inv drawio" src="https://github.com/user-attachments/assets/c78cd96d-c12d-4d89-8a9c-0f8403d13878" />
+</p>
+<p align="center">
+<img width="800" height="417" alt="an_5inv1" src="https://github.com/user-attachments/assets/b5b809ec-d6cb-4f64-8215-0d9a55db50a1" />
+
+</p>
+
+### Oscilador de 3 inversores
+<p align="center">
+<img width="425" height="148" alt="Oscilador3inv drawio" src="https://github.com/user-attachments/assets/72be091d-b024-44e0-9e97-2ff4282d3fc4" />
+</p>
+<p align="center">
+<img width="800" height="419" alt="an_3iv3" src="https://github.com/user-attachments/assets/dd49e6ba-6ff8-4cbb-ba58-bc0b5521f04e" />
+</p>
+<p align="center">
+<img width="800" height="414" alt="an_3iv2" src="https://github.com/user-attachments/assets/dc2e02c6-25f8-4a05-80e1-97443d0e6b7e" />
+
+</p>
+
+### Oscilador de 1 inversor
+<p align="center">
+<img width="165" height="251" alt="Oscilador1inv drawio" src="https://github.com/user-attachments/assets/5efaab38-f277-4bd8-a973-2203ec5d9234" />
+</p>
+
+
+## Relación entre la frecuencia de oscilación y el tiempo de retardo promedio
+
+La frecuencia de oscilación de un oscilador en anillo está directamente determinada por el tiempo de retardo de propagación de los inversores que lo componen. Cada inversor introduce un retardo finito al cambiar su salida en respuesta a un cambio en la entrada.
+
+Cuando una transición lógica recorre toda la cadena de inversores y regresa al punto inicial, se completa medio ciclo de la señal. Para completar un ciclo completo (de alto a bajo y de regreso a alto), la señal debe recorrer el circuito dos veces. Por esta razón, el periodo de oscilación depende del doble del número de inversores y del retardo de cada uno.
+
+Matemáticamente, esta relación se expresa como:
+
+$$
+T = 2 \cdot N \cdot t_{pd}
+$$
+
+donde $$T$$ es el periodo, $$N$$ es el número de inversores y $$t_{pd}$$ es el retardo de propagación promedio.
+
+Dado que la frecuencia es el inverso del periodo:
+
+$$
+f = \frac{1}{2 \cdot N \cdot t_{pd}}
+$$
+
+De esta expresión se observa que la frecuencia es inversamente proporcional al retardo de propagación. Esto implica que:
+
+- Si el retardo de propagación aumenta, la frecuencia disminuye.
+- Si el retardo de propagación disminuye, la frecuencia aumenta.
+
+En términos físicos, esto ocurre porque un mayor retardo significa que la señal tarda más en propagarse a través del circuito, lo que alarga el periodo de oscilación. Por el contrario, inversores más rápidos permiten cambios más rápidos en la señal, aumentando la frecuencia.
+
+Esta relación permite, a partir de la medición experimental del periodo o la frecuencia, estimar el retardo de propagación promedio de las compuertas utilizadas.
+
+
+---
 # Problemas encontrados y soluciones aplicadas
 
 Durante el desarrollo del proyecto, el grupo enfrentó varios problemas relacionados con la implementación y validación del sistema.
