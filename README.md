@@ -276,5 +276,13 @@ En la visualización, se observaron inconsistencias en el display de 7 segmentos
 Finalmente, al trabajar en grupo de tres personas, surgieron dificultades al integrar los módulos desarrollados por separado. Para solucionarlo, se dividió el trabajo por subsistemas y se realizaron pruebas individuales antes de la integración final.
 
 ---
+# Bitácoras de trabajo
+
+A continuación se adjuntan las bitácoras de trabajp de los 3 integrantes del grupo.
+
+[Bitácora de trabajo: David Ignacio Araya Mora](bitacora-david-araya.pdf)
+[Bitácora de trabajo: Nicolás Castro Sánchez](bitacora-nicolas-castro.pdf)
+[Bitácora de trabajo: Sebastián Fallas Mora](Bitacora_P1_SebasFallasMora.pdf)
+
 
 
