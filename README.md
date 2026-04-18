@@ -281,8 +281,12 @@ Finalmente, al trabajar en grupo de tres personas, surgieron dificultades al int
 A continuación se adjuntan las bitácoras de trabajp de los 3 integrantes del grupo.
 
 [Bitácora de trabajo: David Ignacio Araya Mora](bitacora-david-araya.pdf)
+
 [Bitácora de trabajo: Nicolás Castro Sánchez](bitacora-nicolas-castro.pdf)
+
 [Bitácora de trabajo: Sebastián Fallas Mora](Bitacora_P1_SebasFallasMora.pdf)
+
+---
 
 
 
